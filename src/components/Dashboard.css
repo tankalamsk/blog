@@ -1,0 +1,54 @@
+/* Base styles for grid items */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    padding: 50px 120px 0px 120px; /* Padding 20px on left and right */
+    width: 100%; /* Container width 100% */
+    box-sizing: border-box; /* Include padding and border in width */
+
+}
+
+.grid-item {
+    width: calc(100% - 240px); 
+   
+}
+
+@media screen and (max-width: 750px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column */
+        padding: 20px 10px 0px 10px;
+    }
+
+    .grid-item {
+        width: calc(100% - 20px); /* Calculate width with padding */
+        
+    }
+  }
+
+  @media screen and (min-width: 751px) and (max-width: 1000px) {
+    .grid-container {
+        
+        padding: 50px 40px 0px 40px;
+     }
+ 
+     .grid-item {
+         width: calc(100% - 80px); /* Calculate width with padding */
+   
+     }
+  }
+  
+  /* Media query for screens between 750px and 1400px (e.g., tablets and small desktops) */
+  @media screen and (min-width: 1001px) and (max-width: 1400px) {
+    .grid-container {
+        
+        padding: 50px 40px 0px 40px;
+     }
+ 
+     .grid-item {
+         width: calc(100% - 80px); /* Calculate width with padding */
+      
+     }
+  }
+  
+ 

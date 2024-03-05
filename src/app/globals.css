@@ -1,0 +1,51 @@
+
+*{
+  margin: 0px;
+}
+.subtitle{
+  font-size: 1.25rem; /* Adjust as needed */
+  color: #6b7280; /* Adjust as needed */
+  margin: auto ;
+
+}
+
+
+/* title css */
+
+.blog-title {
+  margin: 0px 0px 0px 0px;
+  font-family: 'font-display'; /* You'll need to replace 'font-display' with the actual font family name */
+  font-size: 1.875rem; /* text-3xl equivalent */
+  font-weight: 800; /* font-extrabold equivalent */
+  color: #4b5563; /* text-gray-700 equivalent */
+}
+
+
+
+.contain {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 100px;
+  height: 280px;
+  border-bottom: #999898;
+  border-style: solid;
+  border-width: 1;
+  box-shadow: 0 8px 25px #23232333;
+  background: 
+  radial-gradient(circle, rgba(211, 204, 226, 0.9) 0%, rgba(171, 201, 172, 0.8) 100%),
+    /* Grid pattern */
+    repeating-linear-gradient(0deg, #959493,#959493 1px, transparent 1px, transparent 7px),
+    repeating-linear-gradient(90deg, #959493, #959493 1px, transparent 1px, transparent 7px);
+    background-size: 70px 70px 70px 70px 12px 12px 12px 12px;
+}
+
+
+@media screen and (min-width: 751px) and (max-width: 1400px) {
+  .contain {
+   padding-left: 40px;
+  }
+ }
+ 
